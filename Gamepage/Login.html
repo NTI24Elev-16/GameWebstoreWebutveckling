@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="col-20">
+    <nav class="navbar">
+        <ul>
+            <div class="flex-container">
+                <a href="Shop.html" class="flex-container">Shop</a>
+                <a href=GameCenter".html" class="flex-container">GameCenter</a>
+                <a href="Cart.html" class="flex-container">Cart</a>
+                <a href="Login.html" class="flex-container">Login</a>
+            </div>
+        </ul>
+    </nav>
+</div>
+<div class="flex-containers">
+<h1>Login</h1>
+</div>
+<div class="flex-containers">
+    <div>
+        <form method="post" id="loginform" action="Logedin.html">
+            <label for="Email">Email:</label><br>
+            <input type="text" id="Email" onkeypress="validateEmail()" required><br>
+            <a id=p33></a><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <input type="checkbox" id="Tos" name="Tos" value="Agree" required>
+            <label for="ToS"> I agree to the terms of service</label><br>
+            <input type="button" onclick=check() value="Submit form">
+        </form>
+    </div>
+</div>
+<a href="Register.html" class="flex-container">Dont have an account?<br>click her</a>
+<script>
+    function validateEmail(){
+        if(!document.getElementById("Email").value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+            document.getElementById("p33").innerHTML="Enter a vaild email";
+            return false;
+        }
+        document.getElementById("p33").innerHTML="Vaild email";
+        return true;
+    }
+    function check(){
+        if(validateEmail()){
+            document.getElementById("loginform").submit();
+        }
+    }
+</script>
+
+</body>
+</html>
