@@ -3,40 +3,45 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="java.js"></script>
 </head>
 <body>
 <div class="col-20">
   <nav class="navbar">
     <ul>
       <div class="flex-container">
+        <img src="./images/logga.jpg" width="40px" height="40px">
         <a href="Shop.html" class="flex-container">Shop</a>
         <a href=GameCenter".html" class="flex-container">GameCenter</a>
         <a href="Cart.html" class="flex-container">Cart</a>
-        <a href="Login.html" class="flex-container">Login</a>
+        <a id="account" href="Login.html" class="flex-container">Login</a>
       </div>
     </ul>
   </nav>
 </div>
+<div class="col-20">
+  <div class="flex-container">
 <h1>Register</h1>
+  </div>
+</div>
 <div class="row">
-  <div class="col-12">
+  <div class="col-20">
     <div class="flex-container">
-      <div>
-        <form action="">
+        <form method="post" id="loginform" action="Shop.html">
           <label for="Email">Email:</label><br>
-          <input type="text" id="Email" name="Email"><br>
+          <input type="text" id="Email" onkeypress="validateEmail()" required><br>
+          <a id=p33></a><br>
           <label for="password">Password:</label><br>
           <input type="text" id="password" name="password"><br>
           <label for="password">Type the same password again to confirm your Password:</label><br>
           <input type="text" id="confirm password" name="confirm password"><br>
           <input type="checkbox" id="Tos" name="Tos" value="Agree">
           <label for="ToS"> I agree to the terms of service</label><br>
-          <input type="submit" value="Submit">
+          <input type="button" onclick=check() value="Submit form">
         </form>
       </div>
     </div>
   </div>
 </div>
-<main>this is the not normal one</main>
 </body>
 </html>
