@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
         <link href="style.css" rel="stylesheet" type="text/css">
     <script src="java.js"></script>
 </head>
@@ -12,29 +13,35 @@
             <div class="flex-container">
                 <img src="./images/logga.jpg" width="40px" height="40px">
                 <a href="Shop.html" class="flex-container">Shop</a>
-                <a href=GameCenter".html" class="flex-container">GameCenter</a>
+                <a href="GameCenter.html" class="flex-container">GameCenter</a>
                 <a href="Cart.html" class="flex-container">Cart</a>
                 <a id="account" href="Login.html" class="flex-container">Login</a>
             </div>
         </ul>
     </nav>
 </div>
-<div class="flex-containers">
-<h1>Login</h1>
-</div>
-<div class="flex-containers">
-    <div>
-        <form method="post" id="loginform" action="Logedin.html">
-            <label for="Email">Email:</label><br>
-            <input type="text" id="Email" onkeypress="validateEmail()" required><br>
-            <a id=p33></a><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br>
-            <input type="checkbox" id="Tos" name="Tos" value="Agree" required>
-            <label for="ToS"> I agree to the terms of service</label><br>
-            <input type="button" onclick=check() value="Submit form">
-        </form>
-        <a href="Register.html" class="flex-container">Dont have an account?<br>click her</a>
+<div class="col-20">
+    <div class="flex-containers">
+        <div class="w3-card-4" style="width:90%;">
+            <header class="w3-container w3-center">
+                <h1>Login</h1><br>
+            </header><br>
+            <div class="w3-container w3-center">
+                <form method="post" id="loginform" action="Logedin.html">
+                    <label for="Email">Email:</label><br>
+                    <input type="text" id="Email" onkeypress="validateEmail()" required><br>
+                    <a id=p33></a><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required><br>
+                    <input type="checkbox" id="Tos" name="Tos" value="Agree" required>
+                    <label for="ToS"> I agree to the terms of service</label><br>
+                    <input type="button" onclick=check() value="Submit form">
+                </form>
+            </div><br>
+            <footer class="w3-container  w3-center">
+                <a href="Register.html">Dont have an account?<br>click her</a>
+            </footer><br>
+        </div>
     </div>
 </div>
 </body>

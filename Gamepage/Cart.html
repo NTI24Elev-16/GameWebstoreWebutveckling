@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <script src="java.js"></script>
     <title></title>
 </head>
@@ -20,62 +21,72 @@
         </ul>
     </nav>
 </div>
-<div class="flex-container">
-<form method="post" id="payment" action="Index.html">
-    <header>Card information</header>
-    <div class="col-6">
-    <label for="Card_Nummber">Card nummber:</label><br>
-    <input type="text" id="CardNummber" required>
+<div class="col-20">
+    <div class="flex-containers">
+        <div class="w3-card-4" style="width:90%;">
+            <header class="w3-container w3-center">
+                <h1>Login</h1><br>
+            </header><br>
+            <div class="w3-container w3-center">
+                <form method="post" id="payment" action="Index.html">
+                    <header>Card information</header>
+                    <div class="col-5">
+                        <label for="Card_Nummber">Card nummber:</label><br>
+                        <input type="text" id="CardNummber" required>
+                    </div>
+            <div class="col-5">
+                        <label for="Experation_date_month">Experation date month:</label><br>
+                        <input type="Experation_date_month" id="Experation_date_month" name="Experation_date_month" required>
+            </div>
+            <div class="col-5">
+                        <label for="Experation_date_month">Experation date year:</label><br>
+                        <input type="Experation_date_year" id="Experation_date_year" name="Experation_date_year" required>
+            </div>
+                <div class="col-5">
+                        <label for="Security code">Security code:</label><br>
+                        <input type="Security code" id="Security code" name="Security code" required><br>
+                </div>
+            <footer class="w3-container  w3-center">
+                <br><header>Billing information</header><br>
+                <div class="col-5">
+                    <label for="Firstname">First Name:</label><br>
+                    <input type="text" id="Firstname" required>
+                </div>
+                <div class="col-5">
+                    <label for="Lastname">Last Name:</label><br>
+                    <input type="text" id="Lastname" required>
+                </div>
+                <div class="col-5">
+                    <label for="City">City:</label><br>
+                    <input type="City" id="City" name="City" required>
+                </div>
+                <div class="col-5">
+                    <label for="Postcode">Post code:</label><br>
+                    <input type="Postcode" id="Postcode" name="Postcode" required>
+                </div>
+                <br>
+                <header> </header><br>
+                <div class="col-5">
+                    <label for="Billingadress">Billing adress:</label><br>
+                    <input type="Billingadress" id="Billingadress" name="Billingadress" required>
+                </div>
+                <div class="col-5">
+                    <label for="Country">Country:</label><br>
+                    <input type="Country" id="Country" name="Country" required>
+                </div>
+                <div class="col-5">
+                    <label for="Phonenummber">Phone nummber:</label><br>
+                    <input type="Phonenummber" id="Phonenummber" name="Phonenummber" required>
+                </div>
+                <div class="col-20">
+                    <input type="checkbox" id="Tos" name="Tos" value="Agree" required>
+                    <label for="ToS"> I agree to the terms of service</label><br>
+                    <input type="button" onclick=check() value="Submit form">
+                </div>
+                </form>
+            </footer><br>
         </div>
-    <div class="col-5">
-    <label for="Experation_date_month">Experation date month:</label><br>
-    <input type="Experation_date_month" id="Experation_date_month" name="Experation_date_month" required>
-        </div>
-    <div class="col-6">
-        <label for="Experation_date_month">Experation date year:</label><br>
-        <input type="Experation_date_year" id="Experation_date_year" name="Experation_date_year" required>
     </div>
-    <div class="col-3">
-    <label for="Security code">Security code:</label><br>
-    <input type="Security code" id="Security code" name="Security code" required><br>
-    </div>
-    <br><header>Billing information</header><br>
-    <div class="col-5">
-        <label for="Firstname">First Name:</label><br>
-        <input type="text" id="Firstname" required>
-    </div>
-    <div class="col-6">
-    <label for="Lastname">Last Name:</label><br>
-    <input type="text" id="Lastname" required>
-    </div>
-    <div class="col-5">
-        <label for="City">City:</label><br>
-        <input type="City" id="City" name="City" required>
-    </div>
-    <div class="col-4">
-        <label for="Postcode">Post code:</label><br>
-        <input type="Postcode" id="Postcode" name="Postcode" required>
-    </div>
-    <br>
-    <header> </header><br>
-    <div class="col-5">
-        <label for="Billingadress">Billing adress:</label><br>
-        <input type="Billingadress" id="Billingadress" name="Billingadress" required>
-    </div>
-    <div class="col-5">
-        <label for="Country">Country:</label><br>
-        <input type="Country" id="Country" name="Country" required>
-    </div>
-    <div class="col-5">
-        <label for="Phonenummber">Phone nummber:</label><br>
-        <input type="Phonenummber" id="Phonenummber" name="Phonenummber" required>
-    </div>
-    <div class="col-10">
-    <input type="checkbox" id="Tos" name="Tos" value="Agree" required>
-    <label for="ToS"> I agree to the terms of service</label><br>
-    <input type="button" onclick=check() value="Submit form">
-</div>
-</form>
 </div>
 </body>
 </html>

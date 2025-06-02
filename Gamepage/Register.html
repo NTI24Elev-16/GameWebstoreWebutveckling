@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <link href="style.css" rel="stylesheet" type="text/css">
   <script src="java.js"></script>
 </head>
@@ -20,13 +21,12 @@
   </nav>
 </div>
 <div class="col-20">
-  <div class="flex-container">
-<h1>Register</h1>
-  </div>
-</div>
-<div class="row">
-  <div class="col-20">
-    <div class="flex-container">
+  <div class="flex-containers">
+    <div class="w3-card-4" style="width:90%;">
+      <header class="w3-container w3-center">
+        <h1>Register</h1><br>
+      </header><br>
+      <div class="w3-container w3-center">
         <form method="post" id="loginform" action="Shop.html">
           <label for="Email">Email:</label><br>
           <input type="text" id="Email" onkeypress="validateEmail()" required><br>
@@ -39,9 +39,10 @@
           <label for="ToS"> I agree to the terms of service</label><br>
           <input type="button" onclick=check() value="Submit form">
         </form>
-      </div>
+      </div><br>
     </div>
   </div>
 </div>
+
 </body>
 </html>

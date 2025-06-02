@@ -42,6 +42,7 @@ ul {
     flex-direction: row;
     color: #FFD700;
     background-color: #36005d;
+    border: 1px solid #FFD700;
 }
 
 .flex-container > div {
